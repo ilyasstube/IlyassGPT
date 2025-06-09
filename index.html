@@ -211,12 +211,11 @@
 
     userInput.value = '';
 
-    // Appel à OpenRouter
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
+        "Authorization": "Bearer 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"
       },
       body: JSON.stringify({
         model: "openai/gpt-3.5-turbo",
